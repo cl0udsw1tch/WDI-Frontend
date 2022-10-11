@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/WDI-Frontend/static/css/main.229e0a67.css",
-    "main.js": "/WDI-Frontend/static/js/main.6f015a7a.js",
+    "main.js": "/WDI-Frontend/static/js/main.fbb5bec5.js",
     "index.html": "/WDI-Frontend/index.html",
     "main.229e0a67.css.map": "/WDI-Frontend/static/css/main.229e0a67.css.map",
-    "main.6f015a7a.js.map": "/WDI-Frontend/static/js/main.6f015a7a.js.map"
+    "main.fbb5bec5.js.map": "/WDI-Frontend/static/js/main.fbb5bec5.js.map"
   },
   "entrypoints": [
     "static/css/main.229e0a67.css",
-    "static/js/main.6f015a7a.js"
+    "static/js/main.fbb5bec5.js"
   ]
 }
