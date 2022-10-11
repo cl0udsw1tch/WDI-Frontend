@@ -24,7 +24,7 @@ function App() {
   )
 
   useEffect(() => {
-    fetch("/indicators").then(response => response.json()).then(
+    fetch("https://world-dev-indicators-api.herokuapp.com/indicators").then(response => response.json()).then(
       data => {
         setIndicatorBank(data.indicators)
         }).catch((e) => console.log(e.message))

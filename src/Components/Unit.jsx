@@ -5,6 +5,8 @@ import { useState, useEffect } from "react"
 import { motion } from "framer-motion"
 import "../App.css"
 
+const API_PROXY = "https://world-dev-indicators-api.herokuapp.com"
+
 const HandleData = (data) => {
 
     let graphData = {}
@@ -50,12 +52,11 @@ const Unit = (props) => {
 
     useEffect(() => { 
 
-        fetch("/data/"  + props.indicator.value,  {
+        fetch(API_PROXY + "/data/"  + props.indicator.value,  {
             method: 'GET',
-            credentials: "include",
             cache: 'no-cache',
             headers: new Headers({
-                'content-type': 'application/json'
+                'content-type': 'application/json',
             })
             }).then(response => response.json()).then(
             data => {
@@ -63,9 +64,8 @@ const Unit = (props) => {
             }).catch((e) => console.log(e.message))
 
 
-        fetch("/meta/" + props.indicator.value,  {
+        fetch(API_PROXY + "/meta/" + props.indicator.value,  {
             method: "GET",
-            credentials: "include",
             cache: 'no-cache',
             headers: new Headers({
                 'content-type': 'application/json'
@@ -79,9 +79,8 @@ const Unit = (props) => {
 
     useEffect(() => {
         if (forecast_to) {
-            fetch("/forecast", {
+            fetch(API_PROXY + "/forecast", {
                 method: 'POST',
-                credentials: "include",
                 body: JSON.stringify({data: graphData, forecast_to: forecast_to}),
                 cache: 'no-cache',
                 headers: new Headers({
