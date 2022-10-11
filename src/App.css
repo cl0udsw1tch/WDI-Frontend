@@ -1,0 +1,233 @@
+
+
+.App {
+
+  background-color: #111111;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+ 
+
+
+.Header {
+  z-index: 2;
+  display: flex;
+  background-color:  	 #111111;
+  font-family: monospace;
+  font-size: 8px;
+  color: #FFFFFF;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  height: 20vh;
+  border-image: linear-gradient(to right, #09CBC5, #FF00FF) 1;
+  border-width: 0 0 3px 0 ;
+  border-style: solid ;
+  margin-bottom: 5vh;
+}
+
+.Title {
+  width: 40vw;
+  display: flex;
+}
+
+.Logo {
+  display: flex;
+  width: 20vw;
+  align-items: center;
+  justify-content: center;
+}
+
+.Body {
+  display: flex;
+  flex-direction: row;
+}
+
+.Main {
+  display: flex;
+  flex-direction: column;
+  min-height: 70vh;
+  width: 80vw;
+
+
+}
+.Grid {
+  display: flex;
+  flex-direction: row;
+  max-height: 70vh;
+  width: 80vw;
+
+
+}
+.Plot {
+  display: flex;
+  flex-direction: column;
+  max-height: 70vh;
+  min-width: 65vw;
+
+
+}
+
+.Meta {
+  display: flex;
+  flex-direction: column;
+  max-height: 70vh;
+  width: 15vw;
+  align-items: center;
+  font-family: monospace;
+
+}
+
+.ControlContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: 15%;
+
+}
+
+.Control {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.CodeContainer {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.InfoContainer {
+  overflow-y: auto;
+  width: 100%;
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.KeyContainer {
+  cursor: pointer;
+  display: flex;
+  margin: 5px;
+  padding-left: 20px;
+  color: #09CBC5;
+}
+
+.KeyTitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 10;
+  padding: 20px;
+  color: #09CBC5;
+
+}
+.KeyInfoContainer {
+  display: flex;
+  height: 50%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+}
+.KeyInfo {
+  word-wrap: break-word;
+  overflow-wrap: break-word; 
+  word-break: break-word;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: wrap;
+  width: 80%;
+  height: 100%;
+  align-items: center;
+  color: #09CBC5;
+
+}
+
+.OptionsBar {
+  background-color:  #111111;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 20vw;
+  border-left: 1px solid #444
+}
+
+.Select {
+
+  
+  width: 15vw;
+  display: flex;
+  justify-content: center;
+  max-height: 70vh;
+}
+
+.Bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-image: linear-gradient(to right, #FF00FF, #09CBC5) 1;
+  border-width: 3px 0 0 0 ;
+  border-style: solid ;
+  height: 20vh;
+  width: 80vw;
+  margin-top: 5vh;
+}
+
+
+
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
