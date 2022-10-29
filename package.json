@@ -1,6 +1,6 @@
 {
   "name": "reactjs-frontend",
-  "homepage": "https://cloudswitch.ca",
+  "homepage": "https://wdi-app.cloudswitch.ca",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
